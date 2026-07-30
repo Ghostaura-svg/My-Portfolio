@@ -1,1 +1,617 @@
-sdsdfdf
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdul Rehman | Portfolio</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== BACKGROUND ===== -->
+    <canvas id="bg-canvas"></canvas>
+    <div class="bg-overlay"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar">
+        <div class="logo">AR</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Education</a></li>
+            <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <span class="hero-badge">✦ BS Computer Science</span>
+                    <h1>
+                        Hi, I'm <br />
+                        <span class="highlight">Abdul Rehman</span>
+                    </h1>
+                    <p>
+                        <strong>Computer Science Student</strong> at Namal University
+                        with a passion for full-stack development, AI, and creating
+                        innovative solutions to real-world problems.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="number">3.60</div>
+                            <div class="label">CGPA</div>
+                        </div>
+                        <div class="stat">
+                            <div class="number">10+</div>
+                            <div class="label">Projects</div>
+                        </div>
+                        <div class="stat">
+                            <div class="number">3</div>
+                            <div class="label">Certifications</div>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i> View Projects
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-paper-plane"></i> Contact Me
+                      <a href="Resume.pdf"
+                        class="btn btn-download"
+                              download="Abdul_Rehman_CV.pdf">
+                         <i class="fas fa-download"></i>
+                             Download CV
+                            </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-wrapper">
+                        <div class="profile-img-container" id="profileContainer">
+                            <img src="images/profile.jpg" alt="Abdul Rehman" class="profile-img" id="profileImage">
+                        </div>
+                        <div class="float-icon float-icon-1"><i class="fas fa-code"></i></div>
+                        <div class="float-icon float-icon-2"><i class="fas fa-database"></i></div>
+                        <div class="float-icon float-icon-3"><i class="fas fa-brain"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+            <p class="section-subtitle">Technologies and tools I work with to bring ideas to life.</p>
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="icon"><i class="fas fa-code"></i></div>
+                    <h4>C++</h4>
+                    <p>OOP, Data Structures</p>
+                    <div class="skill-level"><div class="bar" data-width="90"></div></div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="icon"><i class="fas fa-database"></i></div>
+                    <h4>MySQL</h4>
+                    <p>DBMS, 3NF Design</p>
+                    <div class="skill-level"><div class="bar" data-width="85"></div></div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="icon"><i class="fab fa-python"></i></div>
+                    <h4>Python</h4>
+                    <p>Flask, Data Analysis</p>
+                    <div class="skill-level"><div class="bar" data-width="80"></div></div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="icon"><i class="fab fa-html5"></i></div>
+                    <h4>HTML & CSS</h4>
+                    <p>Responsive Design</p>
+                    <div class="skill-level"><div class="bar" data-width="85"></div></div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="icon"><i class="fas fa-microchip"></i></div>
+                    <h4>Assembly</h4>
+                    <p>x86, Irvine32</p>
+                    <div class="skill-level"><div class="bar" data-width="75"></div></div>
+                </div>
+                <div class="skill-card reveal">
+                    <div class="icon"><i class="fas fa-network-wired"></i></div>
+                    <h4>Networking</h4>
+                    <p>Computer Networks</p>
+                    <div class="skill-level"><div class="bar" data-width="70"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="section" id="projects" style="background: rgba(255,255,255,0.005);">
+        <div class="container">
+            <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+            <p class="section-subtitle">Some of my recent work that showcases my skills and creativity.</p>
+            <div class="projects-carousel">
+
+
+
+         <!-- Wrapper -->
+        <div class="projects-wrapper">
+
+             <div class="projects-track">
+
+            <!-- ===========================
+             PAGE 1
+             ============================ -->
+
+               <div class="project-page active">
+
+                <div class="projects-grid">
+
+                <!-- Project 1 -->
+
+                <div class="project-card reveal">
+
+                    <div class="project-thumb">
+
+                        <img src="images/Fair.png"
+                             class="project-image"
+                             alt="Fair & Unbiased Assessment System">
+
+                        <div class="shine"></div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>Fair & Unbiased Assessment System</h3>
+
+                        <p>
+                            Full-stack academic assessment platform using
+                            Flask, MySQL and HTML/CSS featuring secure
+                            role-based portals.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>MySQL</span>
+                            <span>HTML/CSS</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Project 2 -->
+
+                <div class="project-card reveal">
+
+                    <div class="project-thumb">
+
+                        <img src="images/Code.png"
+                             class="project-image"
+                             alt="CodeScope">
+
+                        <div class="shine"></div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>CodeScope - Algorithm Complexity Analyzer</h3>
+
+                        <p>
+                            Web-based tool for analysing Big-O time and
+                            space complexity of source code.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>C++</span>
+                            <span>Algorithms</span>
+                            <span>DSA</span>
+                            <span>Web</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Project 3 -->
+
+                <div class="project-card reveal">
+
+                    <div class="project-thumb">
+
+                        <img src="images/MIPS.png"
+                             class="project-image"
+                             alt="MIPS Processor">
+
+                        <div class="shine"></div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>32-bit Single-Cycle MIPS Processor</h3>
+
+                        <p>
+                            Complete Verilog implementation of a
+                            single-cycle MIPS processor including
+                            datapath and control unit.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Verilog</span>
+                            <span>MIPS</span>
+                            <span>Architecture</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Project 4 -->
+
+                <div class="project-card reveal">
+
+                    <div class="project-thumb">
+
+                        <img src="images/Pac.png"
+                             class="project-image"
+                             alt="PAC-MAN">
+
+                        <div class="shine"></div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>PAC-MAN Game</h3>
+
+                        <p>
+                            x86 Assembly game built using the Irvine32
+                            library featuring keyboard controls,
+                            ghosts and collectibles.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Assembly</span>
+                            <span>Irvine32</span>
+                            <span>Game Dev</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+         </div>
+
+            <!-- ===========================
+             PAGE 2 STARTS HERE
+            ============================ -->
+
+            <div class="project-page">
+
+            <div class="projects-grid">
+                                <!-- Project 5 -->
+
+                <div class="project-card reveal">
+
+                    <div class="project-thumb">
+
+                        <img src="images/Automata.png"
+                             class="project-image"
+                             alt="Automata Theory Simulator">
+
+                        <div class="shine"></div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>Automata Theory Simulator</h3>
+
+                        <p>
+                            Interactive Flutter application supporting DFA,
+                            NFA, PDA and Turing Machine simulations with a
+                            user-friendly interface.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Flutter</span>
+                            <span>DFA</span>
+                            <span>Turing Machine</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Project 6 -->
+
+                <div class="project-card reveal">
+
+                    <div class="project-thumb">
+
+                        <img src="images/Society.png"
+                             class="project-image"
+                             alt="Society Management">
+
+                        <div class="shine"></div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>Society Resident Management System</h3>
+
+                        <p>
+                            Multi-module C++ application for resident
+                            registration, billing, event handling and
+                            store management.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>C++</span>
+                            <span>OOP</span>
+                            <span>File System</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Project 7 -->
+
+                <div class="project-card reveal">
+
+                    <div class="project-thumb">
+
+                        <img src="images/UNO.png"
+                             class="project-image"
+                             alt="UNO Card Game">
+
+                        <div class="shine"></div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>UNO Card Game</h3>
+
+                        <p>
+                            Interactive Raylib-based UNO implementation
+                            featuring complete gameplay mechanics,
+                            turn management and card effects.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>C++</span>
+                            <span>Raylib</span>
+                            <span>DSA</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Project 8 -->
+
+                <div class="project-card reveal">
+
+                    <div class="project-thumb">
+
+                        <img src="images/Password.png"
+                             class="project-image"
+                             alt="Password Cracker Simulator">
+
+                        <div class="shine"></div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>Password Cracker Simulator</h3>
+
+                        <p>
+                            Educational simulator demonstrating brute-force
+                            and dictionary attack strategies for password
+                            security analysis.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Security</span>
+                            <span>Algorithms</span>
+                            <span>C++</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ===========================
+             PAGE 3 STARTS HERE
+        ============================ -->
+
+        <div class="project-page">
+
+            <div class="projects-grid">
+                                <!-- Project 9 -->
+
+                <div class="project-card reveal">
+
+                    <div class="project-thumb">
+
+                        <img src="images/Chess.png"
+                             class="project-image"
+                             alt="Console Chess Game">
+
+                        <div class="shine"></div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>Console-Based Chess Game</h3>
+
+                        <p>
+                            Complete Chess implementation in C++ featuring
+                            legal move validation, turn management and
+                            object-oriented design.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>C++</span>
+                            <span>OOP</span>
+                            <span>Console</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Project 10 -->
+
+                <div class="project-card reveal">
+
+                    <div class="project-thumb">
+
+                        <img src="images/Snake.png"
+                             class="project-image"
+                             alt="Snake & Leaderboard">
+
+                        <div class="shine"></div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>Snake & Leaderboard</h3>
+
+                        <p>
+                            Classic Snake game with score tracking,
+                            leaderboard system and smooth console gameplay.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>C++</span>
+                            <span>Game Dev</span>
+                            <span>Console</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Project 11 -->
+
+                <div class="project-card reveal">
+
+                    <div class="project-thumb">
+
+                        <img src="images/Tetris.png"
+                             class="project-image"
+                             alt="Tetris Console Game">
+
+                        <div class="shine"></div>
+
+                    </div>
+
+                    <div class="project-info">
+
+                        <h3>Tetris Console Game</h3>
+
+                        <p>
+                            Console-based Tetris featuring collision
+                            detection, scoring system and smooth gameplay
+                            mechanics written in C++.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>C++</span>
+                            <span>Console</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+
+    </div>
+
+    <!-- Previous Button -->
+    <button class="carousel-btn prev-btn" id="prevProject">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <!-- Next Button -->
+    <button class="carousel-btn next-btn" id="nextProject">
+        <i class="fas fa-chevron-right"></i>
+    </button>
+
+</div>
+
+<!-- Navigation Dots -->
+
+<div class="carousel-dots">
+
+    <span class="dot active"></span>
+
+    <span class="dot"></span>
+
+    <span class="dot"></span>
+
+</div>
+                
+
+</div>
+</section>
+
+
+  
